@@ -138,7 +138,7 @@ public class HourGlassArray {
 					}
 				}
 
-				//System.out.println();
+				System.out.println();
 			}
 			//System.out.println("hg_sum-" + hg_sum);
 			sum_hourglasses[sumglassindex] = hg_sum;
