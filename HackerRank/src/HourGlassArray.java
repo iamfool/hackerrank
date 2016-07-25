@@ -16,13 +16,21 @@
 	        }
 	        int sum_hourglasses[] = new int[16];
 	        int hg_sum=0;
+	        int skipi=1;
+	        int skipj=0;
 	        for (int i=0;i<3;i++){
+	        	System.out.println("skipp this arr["+skipi +"] ["+skipj+"]");
 	        	for(int j=0;j<3;j++){
-	        		if((i!=1&& j!=0) || (i!=1&& j!=2) || (i==1 && j==1)){
+	        		
+	        		if(i!=skipi || j!=skipj){
 	        			System.out.print(arr[i][j]+"("+i+","+j+")"+"\t");
 	        			hg_sum=hg_sum+arr[i][j];
 	        		}
+	        		if(skipj<(3-1)&& i==(3-(3-1))){
+			        	skipj=skipj+2;
+			        	}
 	        	}
+	        	
 	        	System.out.println();
 	        }
 	        System.out.println("hg_sum-"+hg_sum);
