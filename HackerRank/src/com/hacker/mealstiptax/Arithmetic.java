@@ -12,13 +12,8 @@ public class Arithmetic {
         int tipPercent = scan.nextInt(); // tip percentage
         int taxPercent = scan.nextInt(); // tax percentage
         scan.close();
-      
-        // Write your calculation code here.
-        double tip= mealCost * tipPercent/100;
-     //   System.out.println(tip+ "tip");
-        double tax=mealCost * taxPercent/100;
-     //   System.out.println(tax + "tax");
-      double total = mealCost + tip + tax;
+     
+        double total = mealCost + mealCost * tipPercent/100 + mealCost * taxPercent/100;
         // cast the result of the rounding operation to an int and save it as totalCost 
         int totalCost = (int) Math.round(total);
         System.out.println("The total meal cost is "+ totalCost +" dollars");
