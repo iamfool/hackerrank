@@ -29,7 +29,7 @@ public class Solution {
         int n= ar.length;
         
     	int e=ar[n-1];
-    	//System.out.println(e);
+    	System.out.println(e);
     	for(int j=n-2; j>=0; j--){
                if(e<ar[j]){
                   ar[j+1] = ar[j];
