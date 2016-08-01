@@ -29,8 +29,9 @@ public class Solution {
         int n= ar.length;
         
     	int e=ar[n-1];
-    	System.out.println(e);
-    	for(int j=n-2; j>=0; j--){
+    	//System.out.println(e);
+    	int j;
+    	for(j=n-2; j>=0; j--){
                if(e<ar[j]){
                   ar[j+1] = ar[j];
                   printArray(ar);
@@ -41,6 +42,10 @@ public class Solution {
                   break;
                }
            }
+    	if(e<ar[0]){
+    		ar[0]=e;
+    		printArray(ar);
+    	}
 	}
 }
 //10
