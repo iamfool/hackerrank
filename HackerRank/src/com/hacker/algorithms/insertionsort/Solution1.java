@@ -8,7 +8,7 @@ public class Solution1 {
     public static void insertionSortPart2(int[] ar)
     {       int temp=0;
            for(int i=0; i<ar.length; i++){
-<<<<<<< HEAD
+
               
                    if(ar[i]>ar[i+1]){
                 	   temp=ar[i];
@@ -16,7 +16,7 @@ public class Solution1 {
                        ar[i+1]=temp;
                    }
                
-=======
+
                for(int j=i+1; j<ar.length; j++){
                    if(ar[i]>ar[j]){
                 	   temp=ar[i];
@@ -24,7 +24,6 @@ public class Solution1 {
                        ar[j]=temp;
                    }
                }
->>>>>>> branch 'master' of https://github.com/iamfool/hackerrank.git
                printArray(ar);
            }
     }  
